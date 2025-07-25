@@ -25,7 +25,7 @@ export async function POST(req) {
     const adId = changes?.value?.ad_id;
 
     const leadRes = await fetch(
-      `https://graph.facebook.com/v17.0/${leadgenId}?access_token=${process.env.FB_PAGE_ACCESS_TOKEN}`
+      `https://graph.facebook.com/v23.0/${leadgenId}?access_token=${process.env.FB_PAGE_ACCESS_TOKEN}`
     );
 
     const data = await leadRes.json();
